@@ -15,16 +15,16 @@ desc 'Upload lib files from remote repo'
 namespace :source do
   task :download do
     js_filename = 'bootstrap-markdown.js'
-    js_url = "https://github.com/toopay/bootstrap-markdown/raw/master/js/#{js_filename}"
+    js_url = "https://raw.githubusercontent.com/toopay/bootstrap-markdown/master/js/#{js_filename}"
     js_path = "vendor/assets/javascripts/#{js_filename}"
 
     css_filename = 'bootstrap-markdown.min.css'
-    css_url = "https://github.com/toopay/bootstrap-markdown/raw/master/css/#{css_filename}"
+    css_url = "https://raw.githubusercontent.com/toopay/bootstrap-markdown/master/css/#{css_filename}"
     css_path = "vendor/assets/stylesheets/#{css_filename}"
 
     %w(de fr ja kr nb nl ru sv tr ua zh).each do |locale|
       locale_filename = "bootstrap-markdown.#{locale}.js"
-      locale_url = "https://github.com/toopay/bootstrap-markdown/raw/master/locale/#{locale_filename}"
+      locale_url = "https://raw.githubusercontent.com/toopay/bootstrap-markdown/master/locale/#{locale_filename}"
       locale_path = "vendor/assets/javascripts/locale/#{locale_filename}"
 
       response = Net::HTTP.get( URI(locale_url) )

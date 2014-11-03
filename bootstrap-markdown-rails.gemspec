@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Bootstrap::Markdown::Rails::VERSION
   spec.authors       = ["Ponomarev Nikolay"]
   spec.email         = ["itsnikolay@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Bootstap markdown for rails}
+  spec.description   = %q{Bootstap markdown for rails}
   spec.homepage      = ""
   spec.license       = "MIT"
 
